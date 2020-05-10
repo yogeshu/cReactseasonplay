@@ -8,8 +8,15 @@ const getSeason = (lat, month) => {
 };
 const SeasonDisplay = props => {
   const season = getSeason(props.lat, new Date().getMonth());
+ const fake =  season === 'winter' ? "Brr! its chilly" : "lets hit the beach" ;
+ const icon = season === 'winter' ? 'snowflake'  : 'sun'
+ return( <div> 
 
-  return <div> Latitude: {props.lat} </div>;
+     <i className={  `${icon} icon` } />
+    <p> {fake} </p>
+      <i className= { `${icon} icon ` }/>
+        </div>  
+  )
 };
 
 export default SeasonDisplay;
