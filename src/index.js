@@ -26,7 +26,7 @@ class App extends Component {
       );
     }
 
-    return <div> <Loader /> </div>;
+    return <div> <Loader message="Please Accept the location Request Okay " /> </div>;
   }
 }
 

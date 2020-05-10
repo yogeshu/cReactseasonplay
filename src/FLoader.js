@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
-const Loader = () => {
+const Loader = (props) => {
     return  (
     <div className="ui active dimmer">
-<div className="ui text big loader">   Loading... </div>
+<div className="ui text big loader"> { props.message} </div>
 
     </div>                )
   }
+
+ Loader.defaultProps = {
+   message : "Loading..."
+ }
+
 export default Loader;
