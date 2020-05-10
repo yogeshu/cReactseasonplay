@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-const SeasonDisplay = () =>{
-    return <div> I am SeasonDisplay Component Of APP </div>
+const SeasonDisplay = (props) =>{
+    return <div>   Latitude:   {props.lat} </div>
 }
  
 export default SeasonDisplay
